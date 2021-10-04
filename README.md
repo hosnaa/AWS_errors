@@ -14,6 +14,9 @@ Followed this [video](https://youtu.be/R7cUtQu7jww) untill the minute (1:30) the
 :+1: I had spaces in the path of the `.pem` key, so I needed to copy it to another path without spaces and it worked
 
 ## Enabling bash debugger on vscode and aws machine
-Followed this [link](https://marketplace.visualstudio.com/items?itemName=rogalmic.bash-debug)\
+Followed this [link](https://marketplace.visualstudio.com/items?itemName=rogalmic.bash-debug) with all configurations\
 * Error: `try to reach unreachable code while setting environment`\
 :+1: Check intallation of [WSL](https://www.windowscentral.com/install-windows-subsystem-linux-windows-10) before linux distros **and** enable **virtualization** on your PC through BIOS. 
+
+## Debug bash file that needs arguments/operands
+:+1: instead of arguments placeholder '$0, $1, $2' write their equivalent strings; ".."
