@@ -22,6 +22,6 @@ Followed this [link](https://marketplace.visualstudio.com/items?itemName=rogalmi
 :+1: instead of arguments placeholder '$0, $1, $2' write their equivalent strings; ".."
 
 ## Reactivate Conda environment in VSCode
-:+1: Follow this [answer](https://stackoverflow.com/questions/43351596/activating-anaconda-environment-in-vscode) where the steps are: \
+:+1: Follow this [answer](https://stackoverflow.com/questions/43351596/activating-anaconda-environment-in-vscode) where the steps are: 
 1. `ctrl + shift + p` on vscode, search for **select interpreter** 
 2. Select the Anaconda environment (probably 1st env)
