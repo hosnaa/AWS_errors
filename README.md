@@ -47,7 +47,7 @@ Followed this [link](https://marketplace.visualstudio.com/items?itemName=rogalmi
 
 ## VSCode: error while trying to select interpreter 
 - error: `command 'python.setInterpreter' not found`
-- :+1: there are some solutions as [this](https://github.com/microsoft/vscode-python/issues/14959#issuecomment-775400750). However, it didn't work for me. What worked for me was to add a default path for the python interpreter in `settings.json`
+- :+1: there are some solutions as [this](https://github.com/microsoft/vscode-python/issues/14959#issuecomment-775400750). However, it didn't work for me. What [worked](https://stackoverflow.com/a/69992382/14922592) for me was to add a default path for the python interpreter in `settings.json`
 - settings.json path: `C:\Users\%%your_user%%\.vscode\extensions\ms-python.python-2022.4.1\pythonFiles\.vscode\settings.json`
 - default path of python interpreter can be that of python which can be checked from debugging in vscode, it'll be the first path: e.g. `C:/Users/%%your_user%%/AppData/Local/Programs/Python/Python39/python.exe`
 - Modify the settings.json to add: `"python.defaultInterpreterPath": %%your_default_path%%`
