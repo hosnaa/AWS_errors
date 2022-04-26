@@ -1,4 +1,4 @@
-# AWS_errors
+# AWS and VSCode errors
 ## Connect with PuTTy: 
 * Error `Server refused our key`\
 :+1: Always recheck the instance user_name (from [here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connection-prereqs.html), e.g. ec2-user, ubuntu,...etc) and your Public IPv4 DNS in the Instance details.\
@@ -44,3 +44,10 @@ Followed this [link](https://marketplace.visualstudio.com/items?itemName=rogalmi
 
 ## VSCode error while Installing libraries "Reload Required" even after reloading
 - Need to install the latest version of vscode and have the same python interpreter version locally and remotely on vscode
+
+## VSCode: error while trying to select interpreter 
+- error: `command 'python.setInterpreter' not found`
+- :+1: there are some solutions as [this](https://github.com/microsoft/vscode-python/issues/14959#issuecomment-775400750). However, it didn't work for me. What worked for me was to add a default path for the python interpreter in `settings.json`
+- settings.json path: `C:\Users\%%your_user%%\.vscode\extensions\ms-python.python-2022.4.1\pythonFiles\.vscode\settings.json`
+- default path of python interpreter can be that of python which can be checked from debugging in vscode, it'll be the first path: e.g. `C:/Users/%%your_user%%/AppData/Local/Programs/Python/Python39/python.exe`
+- Modify the settings.json to add: `"python.defaultInterpreterPath": %%your_default_path%%`
